@@ -1,13 +1,13 @@
 import React from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
-import Menu from '../../common/Menu';
+
 
 const CardProductos = () => {
     return (
         <div>
             <Col>
             <Card style={{ width: '18rem' }}>
-      <Menu></Menu>
+            <Card.Img variant="top" src="https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=600" />
       <Card.Body>
         <Card.Title>Coffe</Card.Title>
         <Card.Text>
@@ -16,7 +16,8 @@ const CardProductos = () => {
         <hr/>
         <Button variant="danger">Ver más</Button>
       </Card.Body>
-    </Card>
+   
+            </Card>
             </Col>
         </div>
     );

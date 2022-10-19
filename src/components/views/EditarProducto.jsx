@@ -4,7 +4,7 @@ import { Form,Button, FormSelect } from 'react-bootstrap';
 const EditarProducto = () => {
     return (
         <div>
-             <div className='container'>
+             <div className='container mainSection'>
             <h1>Editar Producto</h1> 
             <hr />
             <Form>

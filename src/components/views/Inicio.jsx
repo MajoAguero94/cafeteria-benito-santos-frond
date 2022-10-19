@@ -4,7 +4,7 @@ import CardProductos from './adminProductos/CardProductos';
 
 const Inicio = () => {
     return (
-        <div className='container'>
+        <div className='container mainSection'>
             <h1>Pagina principal</h1>
             <hr />
             <Row>

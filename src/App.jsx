@@ -9,16 +9,19 @@ import DetalleProducto from './components/views/DetalleProducto';
 import CrearProducto from './components/views/CrearProducto';
 import CardProductos from './components/views/adminProductos/CardProductos';
 import EditarProducto from './components/views/EditarProducto';
+import './App.css';
 
 function App() {
   return (
   //administramos las rutas
   <BrowserRouter>
+  {/*aqui pongo un componente que aperece en todas las pginas*/}
+  <Menu></Menu>
   <Routes>
     <Route exact path='/Inicio' element= {<Inicio></Inicio>} ></Route>
     <Route exact path='/administrador' element={<Administrador></Administrador>}></Route>
     <Route path='*' element={<Error404></Error404>} ></Route>
-    <Route exact path='/Menu' element={<Menu></Menu>} ></Route>
+   
     <Route exact path='/Footer' element={<Footer></Footer>} ></Route>
     <Route exact path='/DetalleProducto' element={<DetalleProducto></DetalleProducto>} ></Route>
     <Route exact path='/CrearProducto' element={<CrearProducto></CrearProducto>} ></Route>
@@ -28,6 +31,7 @@ function App() {
    
    
   </Routes>
+  <Footer></Footer>
   
   
   

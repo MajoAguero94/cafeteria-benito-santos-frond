@@ -5,7 +5,7 @@ import ItemProducto from './adminProductos/ItemProducto';
 
 const Administrador = () => {
     return (
-        <div className='container'>
+        <div className='container mainSection'>
             <div className='d-flex justify-content-between'>
             <h1 className='display-5'>Productos Disponibles</h1>
             <div className='mt-4'>

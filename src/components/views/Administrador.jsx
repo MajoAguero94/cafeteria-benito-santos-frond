@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
 import { Button } from 'react-bootstrap';
 import ItemProducto from './adminProductos/ItemProducto';
 
+import {consultarApi} from '../herlpers/queries';
+
+
 const Administrador = () => {
+const [productos, setProductos] = useState ([]);
+
+useEffect (()=>{
+
+
+ consultarApi().then((respuesta)=>{
+  //la respuesta es exitosa
+  setProductos(respuesta)
+ }, (reason) =>{
+  console.log(reason);
+  //mostrar un msj al usuario
+ 
+  
+ }
+ );
+
+
+
+
+},[])
+
+ // consultarApi();
     return (
         <div className='container mainSection'>
             <div className='d-flex justify-content-between'>

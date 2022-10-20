@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import ItemProducto from './adminProductos/ItemProducto';
 
 import {consultarApi} from '../herlpers/queries';
+import { Link } from 'react-router-dom';
 
 
 const Administrador = () => {
@@ -35,7 +36,7 @@ useEffect (()=>{
             <h1 className='display-5'>Productos Disponibles</h1>
             <div className='mt-4'>
 
-            <Button>Agregar</Button>
+            <Link className='btn btn-primary' to="/CrearProducto" >Agregar</Link>
             </div>
 
             </div>
@@ -52,7 +53,11 @@ useEffect (()=>{
         </tr>
       </thead>
       <tbody>
-       <ItemProducto></ItemProducto>
+        {/*aqui tngo que hacer un ,ap*/}
+        {
+        productos.map((producto)=> <ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+        }
+       
       
       </tbody>
     </Table>

@@ -14,8 +14,8 @@ const Menu = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavLink to='Inicio' className='text-light'>Inicio</NavLink>
-            <NavLink to='Administrador'  className='text-light'>Administrar</NavLink>
+            <NavLink to='Inicio' className='text-light nav-link nav-item '>Inicio</NavLink>
+            <NavLink to='Administrador'  className='text-light  nav-link nav-item'>Administrar</NavLink>
             
           </Nav>
         </Navbar.Collapse>

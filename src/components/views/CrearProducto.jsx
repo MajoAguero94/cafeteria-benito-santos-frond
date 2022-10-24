@@ -9,7 +9,7 @@ const CrearProducto = () => {
  const{register, handleSubmit, formState:{errors}, reset}= useForm()//aqui puedenir cargados valores por defecto
 //inicilizamos useNavigate
 const navegacion = useNavigate();
- 
+   
 
  const onSubmit =(datos)=>
  {

@@ -2,6 +2,7 @@ import React from 'react';
 import {Button} from 'react-bootstrap';
 import { borrarProductoAPI, consultarApi } from '../../herlpers/queries';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const ItemProducto = ({producto, setProductos}) => {
     const {id, nombreProducto, categoria, imagen, precio} = {...producto}
@@ -43,7 +44,7 @@ const ItemProducto = ({producto, setProductos}) => {
        
         <td className='d-grid'>
            
-            <Button variant="warning">Editar</Button>
+            <Link className="btn btn-wrning" to={`/EditarProducto/${id}`} >Editar</Link>
             <Button variant='danger' onClick={borrarProducto}>Borrar</Button>
            
            

@@ -16,6 +16,23 @@ export const consultarApi = async ()=> {
         
         console.log (error)
         
+    }}
+export const obtenerProductoApi = async (id)=> { 
+    //console.log (URL)
+    try {
+        const respuesta= await fetch(URL+ "/" + id);
+        const producto={
+            dato: await respuesta.json(),
+            respuesta: respuesta.status
+
+        }
+      
+        return producto;
+        
+    } catch (error) {
+        
+        console.log (error)
+        
     }
 
 

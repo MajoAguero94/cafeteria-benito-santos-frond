@@ -3,9 +3,13 @@ import { Form, Button, FormSelect } from 'react-bootstrap';
 import {useForm} from "react-hook-form";
 import Swal from 'sweetalert2';
 import { crearProductoAPI } from '../herlpers/queries';
+import { useNavigate } from 'react-router-dom';
 
 const CrearProducto = () => {
- const{register, handleSubmit, formState:{errors}}= useForm()//aqui puedenir cargados valores por defecto
+ const{register, handleSubmit, formState:{errors}, reset}= useForm()//aqui puedenir cargados valores por defecto
+//inicilizamos useNavigate
+const navegacion = useNavigate();
+ 
 
  const onSubmit =(datos)=>
  {
@@ -16,7 +20,12 @@ const CrearProducto = () => {
    console.log(respuesta)
    if(respuesta.status=== 201){
      //si la respuesta es correcta indicarle al usuario con algun msj
-    Swal.fire("Producto creado","El producto fue reado exitosamente"," success")
+    Swal.fire("Producto creado","El producto fue reado exitosamente","success");
+    //resetear formulario
+    reset();
+
+    //redireccionar 
+    navegacion("/Administrador")
    }else{
     Swal.fire("Ocurrio un error","El producto no pudo ser creado"," error")
    }

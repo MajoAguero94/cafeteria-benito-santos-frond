@@ -41,6 +41,41 @@
       "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "categoria": "Bebida-caliente",
       "id": 6
+    },
+    {
+      "nombreProducto": "factur",
+      "precio": "70",
+      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
+      "id": 7
+    },
+    {
+      "nombreProducto": "factura",
+      "precio": "70",
+      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
+      "id": 8
+    },
+    {
+      "nombreProducto": "Pan",
+      "precio": "350",
+      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Salado",
+      "id": 9
+    },
+    {
+      "nombreProducto": "tortilla",
+      "precio": "50",
+      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Salado",
+      "id": 10
+    },
+    {
+      "nombreProducto": "alfajor de maicena",
+      "precio": "80",
+      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
+      "id": 11
     }
   ]
 }

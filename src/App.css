@@ -7,3 +7,20 @@
 .mainSection{
     flex-grow: 1;
 }
+
+.login{
+    border: solid 1px rgb(70, 51, 57);
+    background-color: rgb(36, 29, 31);
+    color: white;
+    width: 40rem;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+

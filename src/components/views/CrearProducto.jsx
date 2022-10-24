@@ -20,7 +20,7 @@ const navegacion = useNavigate();
    console.log(respuesta)
    if(respuesta.status=== 201){
      //si la respuesta es correcta indicarle al usuario con algun msj
-    Swal.fire("Producto creado","El producto fue reado exitosamente","success");
+    Swal.fire("Producto creado","El producto fue creado exitosamente","success");
     //resetear formulario
     reset();
 

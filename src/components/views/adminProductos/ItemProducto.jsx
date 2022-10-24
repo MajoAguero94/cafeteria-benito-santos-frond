@@ -1,8 +1,37 @@
 import React from 'react';
-import {Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap';
+import { borrarProductoAPI, consultarApi } from '../../herlpers/queries';
+import Swal from 'sweetalert2';
 
-const ItemProducto = ({producto}) => {
+const ItemProducto = ({producto, setProductos}) => {
     const {id, nombreProducto, categoria, imagen, precio} = {...producto}
+
+
+
+
+    const borrarProducto = ()=>{
+
+        //TAREA : agregar la ventana de swal alert para preguntar si querermos borrar producto, solo si es "si" realizar el siguiente codigo
+        borrarProductoAPI(id).then((respuesta)=>{
+            if(respuesta.status=== 200){
+                //se pudo borrar el producto
+                Swal.fire("Producto eliminado","El producto fue eliminado exitosamente","success");
+                //obtener todos los productos actualesy actualizamos el state productos del componente administrador
+             consultarApi().then((respuesta)=>{
+                setProductos(respuesta);
+
+             })
+
+            }else{
+                //mostrar al usuario un msj de error
+                Swal.fire("Ocurrio un error","Vuelva a intentar esta operacion en unos minutos","error");
+            }
+
+        })
+    }
+
+
+
     return (
         <tr>
         <td>{id}</td>
@@ -14,8 +43,8 @@ const ItemProducto = ({producto}) => {
        
         <td className='d-grid'>
            
-            <Button>Editar</Button>
-            <Button>Borrar</Button>
+            <Button variant="warning">Editar</Button>
+            <Button variant='danger' onClick={borrarProducto}>Borrar</Button>
            
            
             

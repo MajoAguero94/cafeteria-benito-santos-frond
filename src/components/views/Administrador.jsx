@@ -55,7 +55,7 @@ useEffect (()=>{
       <tbody>
         {/*aqui tngo que hacer un ,ap*/}
         {
-        productos.map((producto)=> <ItemProducto key={producto.id} producto={producto}></ItemProducto>)
+        productos.map((producto)=> <ItemProducto key={producto.id} producto={producto} setProductos={setProductos}></ItemProducto>)
         }
        
       

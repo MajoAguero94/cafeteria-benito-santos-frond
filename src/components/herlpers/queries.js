@@ -89,6 +89,31 @@ export const borrarProductoAPI = async (id)=> {
 
 
 }
+export const editarProductoAPI = async (id, producto)=> { 
+    //console.log (URL)
+    try {
+        const respuesta= await fetch(URL + "/"+id,{
+            method: "PUT", //tipo de metodos opeticion
+            headers:{
+                "Content-Type": "application/json"
+            },//encabezados
+            body: JSON.stringify(producto)//al producto se lo enviamos en l body
+        }); //HASTA HAGO LA PETICION
+       
+        return respuesta;//AQUI ESPERO LA RESPUESTA
+        
+    } catch (error) {
+        
+        console.log (error);
+        return false;
+        
+    }//AQUI ESPERO SI HAY ALGUN ERROR
+
+
+
+
+
+}
 
 
 

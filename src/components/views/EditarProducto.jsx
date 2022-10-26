@@ -1,14 +1,16 @@
 import React, { useEffect } from 'react';
 import { Form,Button, FormSelect } from 'react-bootstrap';
 import {useForm} from "react-hook-form";
-import { useParams } from 'react-router-dom';
-import { obtenerProductoApi } from '../herlpers/queries';
+import { useNavigate, useParams } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { editarProductoAPI, obtenerProductoApi } from '../herlpers/queries';
 const EditarProducto = () => {
   
   
   const{register, handleSubmit, formState:{errors}, setValue}= useForm()
   //buscamos el parametro de la URL o ruta
   const {id} = useParams();
+  const navegacion = useNavigate();
   
   useEffect(()=>{
     obtenerProductoApi(id).then((respuesta)=>{
@@ -27,7 +29,16 @@ const EditarProducto = () => {
     console.log(datos)
     console.log("desde editar producto")
     //pedir a la API actualizar los datos del producto X
-    
+    editarProductoAPI(id, datos).then((respuesta)=>{
+      if(respuesta.status === 200){
+        Swal.fire("Producto editado","El producto fue actualizado","success")
+        //redireccionar a la pag del adminitrador
+        navegacion("/Administrador");
+      }else{
+        //mostrar el cartel de error al usuario
+      }
+    })
+
   }
   return (
      

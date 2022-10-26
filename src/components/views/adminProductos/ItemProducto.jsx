@@ -44,7 +44,7 @@ const ItemProducto = ({producto, setProductos}) => {
        
         <td className='d-grid'>
            
-            <Link className="btn btn-wrning" to={`/EditarProducto/${id}`} >Editar</Link>
+            <Link className="btn btn-warning" to={`/EditarProducto/${id}`} >Editar</Link>
             <Button variant='danger' onClick={borrarProducto}>Borrar</Button>
            
            

@@ -1,15 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Form,Button, FormSelect } from 'react-bootstrap';
 import {useForm} from "react-hook-form";
+import { useParams } from 'react-router-dom';
+import { obtenerProductoApi } from '../herlpers/queries';
 const EditarProducto = () => {
   
   
-  const{register, handleSubmit, formState:{errors}, reset}= useForm()
+  const{register, handleSubmit, formState:{errors}, setValue}= useForm()
+  //buscamos el parametro de la URL o ruta
+  const {id} = useParams();
+  
+  useEffect(()=>{
+    obtenerProductoApi(id).then((respuesta)=>{
+      if(respuesta.status === 200){
+        console.log(respuesta)
+        setValue("nombreProducto", respuesta.dato.nombreProducto);
+        setValue("precio", respuesta.dato.precio);
+        setValue("imagen", respuesta.dato.imagen);
+        setValue("categoria", respuesta.dato.categoria);
+        
+      }
+    })
+  },[])
+  
   const onSubmit =(datos)=>{
     console.log(datos)
     console.log("desde editar producto")
+    //pedir a la API actualizar los datos del producto X
+    
   }
-  
   return (
      
              <div className='container mainSection'>

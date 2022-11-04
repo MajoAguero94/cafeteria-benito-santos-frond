@@ -1,23 +1,30 @@
 import React from 'react';
 import {Card, Badge} from 'react-bootstrap'
-import Menu from '../common/Menu';
 
-const DetalleProducto = () => {
+import {  useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { consultarApi } from '../herlpers/queries';
+import ItemProducto from './adminProductos/ItemProducto';
+
+
+const DetalleProducto = ({producto}) => {
+ 
+  
     return (
 
         <Card style={{ width: '18rem' }}>
             <div className='d-flex'>
-            <Menu></Menu>
+           
         <Card.Body>
-          <Card.Title>Coffe</Card.Title>
+          <Card.Title></Card.Title>
           <hr />
-          <Badge bg="success">Infusión</Badge>
+          <Badge bg="success"></Badge>
           <Card.Text>
 
-            $250
-          </Card.Text>
+            $       
+               </Card.Text>
           
-          
+         
         </Card.Body>
             </div>
       

@@ -9,23 +9,23 @@
     },
     {
       "nombreProducto": "brounie",
-      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "precio": 250,
-      "categoria": "dulce",
+      "imagen": "https://images.pexels.com/photos/887853/pexels-photo-887853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Dulce",
       "id": 2
     },
     {
       "nombreProducto": "licuado",
-      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "precio": 450,
-      "categoria": "bebida-fria",
+      "imagen": "https://media.istockphoto.com/photos/tasty-blueberry-smoothie-in-glass-picture-id1156323059?b=1&k=20&m=1156323059&s=612x612&w=0&h=29DJHJ_Jbz1HUNUadXKfd7R1MJjPy04pPZxYnqRZzoE=",
+      "categoria": "Bebida-fria",
       "id": 3
     },
     {
       "nombreProducto": "café expreso",
-      "imagen": "https://images.pexels.com/photos/11942622/pexels-photo-11942622.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       "precio": 400,
-      "categoria": "bebida-caliente",
+      "imagen": "https://images.pexels.com/photos/13954606/pexels-photo-13954606.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Bebida-caliente",
       "id": 4
     },
     {
@@ -36,30 +36,9 @@
       "id": 6
     },
     {
-      "nombreProducto": "factur",
-      "precio": "70",
-      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Dulce",
-      "id": 7
-    },
-    {
-      "nombreProducto": "factura",
-      "precio": "70",
-      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Dulce",
-      "id": 8
-    },
-    {
-      "nombreProducto": "tortilla",
-      "precio": "50",
-      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Salado",
-      "id": 10
-    },
-    {
       "nombreProducto": "alfajor de maicena",
       "precio": "80",
-      "imagen": "https://images.pexels.com/photos/734983/pexels-photo-734983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "imagen": "https://media.istockphoto.com/photos/three-cookies-picture-id533502053?k=20&m=533502053&s=612x612&w=0&h=UC-MjEUbNvGl3AQCCKB7rXf-UhmzTHq4Q8dmEc_DjZE=",
       "categoria": "Dulce",
       "id": 11
     }

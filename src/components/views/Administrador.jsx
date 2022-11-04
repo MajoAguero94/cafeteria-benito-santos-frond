@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Table from 'react-bootstrap/Table';
-import { Button } from 'react-bootstrap';
+
 import ItemProducto from './adminProductos/ItemProducto';
 
 import {consultarApi} from '../herlpers/queries';
@@ -55,7 +55,7 @@ useEffect (()=>{
       <tbody>
         {/*aqui tngo que hacer un ,ap*/}
         {
-        productos.map((producto)=> <ItemProducto key={producto.id} producto={producto} setProductos={setProductos}></ItemProducto>)
+        productos.map((producto)=> <ItemProducto key={producto._id} producto={producto} setProductos={setProductos}></ItemProducto>)
         }
        
       

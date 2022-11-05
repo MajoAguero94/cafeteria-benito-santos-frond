@@ -1,11 +1,11 @@
 import React from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
-import Swal from "sweetalert2";
+
 const Login = () => {
     const {
         register,
-        handleSubmit,
+        
         formState: { errors },
       } = useForm();
     return (
